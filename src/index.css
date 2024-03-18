@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+display: grid;
+grid-template:
+"search" minmax(300px, 50vh)
+"results" minmax(20%, auto)
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#search {
+  display: grid;
+  grid-area: search;
+  grid-template:
+  "search" 60px
+  / 420px;
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+  }
+  
+  #search input {
+  display: block;
+  grid-area: search;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background: none;
+  padding: 0 30px 0 60px;
+  border: none;
+  border-radius: 100px;
+  font: 24px/1 system-ui, sans-serif;
+  outline-offset: -8px;
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+
+  
+  
+  #search svg {
+  grid-area: search;
+  overflow: visible;
+  color: hsl(215, 100%, 50%);
+  fill: none;
+  stroke: currentColor;
+  }
+  
+  .bar {
+  width: 510px;
+  height: 100%;
+  ry: 50%;
+  stroke-width: 10;
+  animation: bar-in 900ms 3s both;
+  }
+  
+  @keyframes bar-in {
+  0% { stroke-dasharray: 0 180 0 226 0 405 0 0 }
+  100% { stroke-dasharray: 0 0 181 0 227 0 405 0 }
+  }
+  
+  
+  .magnifier .glass {
+  cx: 27;
+  cy: 27;
+  r: 8;
+  stroke-width: 3;
+  }
+  .magnifier .handle {
+  x1: 32;
+  y1: 32;
+  x2: 44;
+  y2: 44;
+  stroke-width: 3;
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
+
